@@ -1,11 +1,18 @@
 // Code before Applying SRP 
 
+
+//In this example , we see The Student class has responsibilities such as enrolling in a course, paying fees, viewing the transcript, and printing
+
+//  the report card. However, this violates the Single Responsibility Principle because the Student class is responsible for 
+//  both managing the student's enrollment and academic details.class student is doing so many things in a single class 
+// which violets the Single responsibility principle
+
+
 public class Student {
     private String name;
     private int age;
     private String address;
 
-    // Constructor, getters, and setters omitted for brevity
 
     public void enrollCourse(Course course) {
         // Code to enroll the student in a course
@@ -28,8 +35,7 @@ public class Course {
     private String name;
     private String teacher;
 
-    // Constructor, getters, and setters omitted for brevity
-
+    
     public void addStudent(Student student) {
         // Code to add a student to the course
     }
@@ -45,20 +51,16 @@ public class Course {
 
 
 
-
-
-
-/*
- * The Student class has responsibilities such as enrolling in a course, paying fees, viewing the transcript, and printing
- *  the report card. However, this violates the Single Responsibility Principle because the Student class is responsible for 
- * both managing the student's enrollment and academic details.
-
-    To adhere to the Single Responsibility Principle, we can refactor the code:
- */
-
-
-
 // Code After Applying SRP 
+
+
+// So we can apply SRP in this code dividing the respnsiblity into differnet classes 
+
+//To adhere to the Single Responsibility Principle, we can refactor the code:
+ 
+
+
+
 
 
 public class Student {
@@ -66,7 +68,7 @@ public class Student {
     private int age;
     private String address;
 
-    // Constructor, getters, and setters omitted for brevity
+    
 
     public void enrollCourse(Course course) {
         // Code to enroll the student in a course
@@ -81,7 +83,7 @@ public class Transcript {
     private Student student;
     private List<Grade> grades;
 
-    // Constructor, getters, and setters omitted for brevity
+    
 
     public void addGrade(Grade grade) {
         // Code to add a grade to the transcript
@@ -96,8 +98,7 @@ public class ReportCard {
     private Student student;
     private List<Grade> grades;
 
-    // Constructor, getters, and setters omitted for brevity
-
+    
     public void addGrade(Grade grade) {
         // Code to add a grade to the report card
     }
@@ -110,8 +111,6 @@ public class ReportCard {
 public class Course {
     private String name;
     private String teacher;
-
-    // Constructor, getters, and setters omitted for brevity
 
     public void addStudent(Student student) {
         // Code to add a student to the course
