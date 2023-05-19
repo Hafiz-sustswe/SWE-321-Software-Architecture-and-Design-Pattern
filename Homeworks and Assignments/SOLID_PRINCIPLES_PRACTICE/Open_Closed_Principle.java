@@ -1,6 +1,4 @@
 // Before Applying Open-Closed Principle(Open for extension and closed for modification)
-
-
 // Firstly We will See A code where we are managing the info of the peoples of a school
 // So We Declared an abstract class person, where we are confined in only two type of people(student and teacher only) 
 //If we want to add any other people's info ,for example , Stuff, then we'll need to break the Person class,which is not a good practice anyway
