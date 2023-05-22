@@ -1,8 +1,4 @@
-package structural_design_patterns;
-
-import structural_design_patterns.adapter.IAdapter;
-import structural_design_patterns.adapter.JSON;
-import structural_design_patterns.adapter.XML;
+package structural_design_patterns.adapter;
 
 public class protoTOxmlAdapter implements IAdapter{
     private Proto_buff proto_buff;
@@ -11,20 +7,11 @@ public class protoTOxmlAdapter implements IAdapter{
         this.proto_buff = proto_buff;
     }
 
+    
     @Override
-    public Proto_buff convert(Proto_buff proto_buff) {
+    public <T> XML convert(T type) {
         return this.proto_buff.convertToXML();
     }
 
-    @Override
-    public Proto_buff convert(Proto_buff proto_buff) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'convert'");
-    }
 
-    @Override
-    public XML convert(JSON json) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'convert'");
-    }
 }

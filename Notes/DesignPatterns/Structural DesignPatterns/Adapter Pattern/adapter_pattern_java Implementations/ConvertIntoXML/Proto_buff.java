@@ -1,10 +1,10 @@
-package structural_design_patterns;
+package structural_design_patterns.adapter;
 
 public class Proto_buff {
     public Proto_buff(){};
     public Proto_buff(String data){}
-    Proto_buff convertToXML(){
+    XML convertToXML(){
         // logic to convert the data to XML
-        return new Proto_buff("Stringified Proto-buff data");
+        return new XML("Stringified Proto-buff data");
     }
 }
