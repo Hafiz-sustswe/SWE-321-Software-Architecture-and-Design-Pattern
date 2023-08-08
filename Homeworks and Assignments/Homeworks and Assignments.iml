@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/SOLID_PRINCIPLES_PRACTICE" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/abstract_factory_Implementation" isTestSource="false" packagePrefix="creational_design_patterns.abstract_factory" />
+      <sourceFolder url="file://$MODULE_DIR$/adapter_Method_Imrovisation" isTestSource="false" packagePrefix="structural_design_patterns.adapter" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

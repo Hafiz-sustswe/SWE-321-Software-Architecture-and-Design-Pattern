@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Builder_Method_Exmaple_Burger/Builder_Method_Exmaple_Burger.iml" filepath="$PROJECT_DIR$/Builder_Method_Exmaple_Burger/Builder_Method_Exmaple_Burger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ClassDiagram/ClassDiagram.iml" filepath="$PROJECT_DIR$/ClassDiagram/ClassDiagram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Class_Task_1/Class_Task_1.iml" filepath="$PROJECT_DIR$/Class_Task_1/Class_Task_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Homeworks and Assignments.iml" filepath="$PROJECT_DIR$/Homeworks and Assignments.iml" />
+    </modules>
+  </component>
+</project>
